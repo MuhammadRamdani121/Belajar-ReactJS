@@ -3,12 +3,12 @@ import htmlLessons from "../data/htmlLessons";
 
 function LessonSidebar() {
   return (
-    <aside className="w-64 border-r bg-white">
-      <h2 className="font-bold p-4">HTML Tutorial</h2>
+    <aside className="w-72 border-r h-screen overflow-y-auto text-center">
+      <h2 className="p-4 font-bold text-xl ">HTML Tutorial</h2>
 
       {htmlLessons.map((lesson) => (
         <NavLink
-          key={lesson.id}
+          key={lesson.slug}
           to={`/html/${lesson.slug}`}
           className={({ isActive }) =>
             `block px-4 py-2 ${

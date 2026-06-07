@@ -1,33 +1,48 @@
 const tutorials = [
   {
-    id: 1,
-    name: "HTML",
-    path: "/html",
+    title: "HTML",
+    slug: "html",
+
+    lessons: [
+      {
+        title: "Introduction",
+        slug: "introduction",
+
+        content:
+          "HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman web.",
+
+        example: `<h1>Hello World</h1>`,
+      },
+
+      {
+        title: "Elements",
+        slug: "elements",
+
+        content: "Element HTML adalah komponen utama pembangun halaman web.",
+
+        example: `<p>Ini paragraf</p>`,
+      },
+    ],
   },
+
   {
-    id: 2,
-    name: "CSS",
-    path: "/css",
-  },
-  {
-    id: 3,
-    name: "JavaScript",
-    path: "/javascript",
-  },
-  {
-    id: 4,
-    name: "React",
-    path: "/react",
-  },
-  {
-    id: 5,
-    name: "PHP",
-    path: "/php",
-  },
-  {
-    id: 6,
-    name: "Laravel",
-    path: "/laravel",
+    title: "CSS",
+    slug: "css",
+
+    lessons: [
+      {
+        title: "Introduction",
+        slug: "introduction",
+      },
+      {
+        title: "Selectors",
+        slug: "selectors",
+      },
+      {
+        title: "Flexbox",
+        slug: "flexbox",
+      },
+    ],
   },
 ];
 
